@@ -14,10 +14,12 @@ These queries help identify which servers are generating the highest volume of l
 ## Query 1: Top 10 Servers from SecurityEvent
 
 ```kql
+#Windows servers
 SecurityEvent
 | summarize EventCount = count() by Computer
 | top 10 by EventCount
 
+#Linux servers
 Syslog
 | summarize EventCount = count() by Computer
 | top 10 by EventCount
