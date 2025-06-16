@@ -2,7 +2,7 @@
 
 ## Description
 
-This Kusto Query Language (KQL) script queries the `SigninLogs` table in Microsoft Sentinel to identify the top 10 countries from which successful sign-ins have occurred. It filters for successful sign-in attempts (`ResultType == 0`) and then summarizes the results by country. This information can be useful for analyzing user access patterns, identifying anomalous sign-in activity from unexpected geographies, or understanding global usage trends.
+This Kusto Query Language (KQL) script queries the `SigninLogs` table in Microsoft Sentinel to identify the top 10 countries from which successful sign-ins have occurred. It filters for successful sign-in attempts (`ResultType == 0`) and then summarizes the results by country.
 
 ## Purpose
 
