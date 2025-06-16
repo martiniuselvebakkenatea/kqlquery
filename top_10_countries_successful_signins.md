@@ -6,11 +6,11 @@ This Kusto Query Language (KQL) script queries the `SigninLogs` table in Microso
 
 ## Purpose
 
-- **Threat Hunting: Spot unusual successful sign-ins from unexpected countries.**
-- **User Behavior Analytics: Understand where your user base is logging in from.**
-- **Security Baselines: Build a baseline of expected geographic locations for sign-ins.**
-- **Compliance and Auditing: Generate reports for compliance audits related to geographic access.**
-- **Access Policy Tuning: Use the data to adjust Conditional Access policies based on location.**
+- **Threat Hunting:** Spot unusual successful sign-ins from unexpected countries.
+- **User Behavior Analytics:** Understand where your user base is logging in from.
+- **Security Baselines:** Build a baseline of expected geographic locations for sign-ins.
+- **Compliance and Auditing:** Generate reports for compliance audits related to geographic access.
+- **Access Policy Tuning:** Use the data to adjust Conditional Access policies based on location.
   
 ## KQL Query
 
