@@ -19,5 +19,3 @@ SigninLogs
 | where ResultType == 0  // 0 = Success
 | summarize SuccessfulSignins = count() by Location
 | top 10 by SuccessfulSignins desc
-
-
