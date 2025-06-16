@@ -4,16 +4,14 @@
 
 This Kusto Query Language (KQL) script queries the `SigninLogs` table in Microsoft Sentinel to identify the top 10 countries from which successful sign-ins have occurred. It filters for successful sign-in attempts (`ResultType == 0`) and then summarizes the results by country. This information can be useful for analyzing user access patterns, identifying anomalous sign-in activity from unexpected geographies, or understanding global usage trends.
 
-Threat Hunting: Spot unusual successful sign-ins from unexpected countries.
+## Purpose
 
-User Behavior Analytics: Understand where your user base is logging in from.
-
-Security Baselines: Build a baseline of expected geographic locations for sign-ins.
-
-Compliance and Auditing: Generate reports for compliance audits related to geographic access.
-
-Access Policy Tuning: Use the data to adjust Conditional Access policies based on location.
-
+- **Threat Hunting: Spot unusual successful sign-ins from unexpected countries.**
+- **User Behavior Analytics: Understand where your user base is logging in from.**
+- **Security Baselines: Build a baseline of expected geographic locations for sign-ins.**
+- **Compliance and Auditing: Generate reports for compliance audits related to geographic access.**
+- **Access Policy Tuning: Use the data to adjust Conditional Access policies based on location.**
+  
 ## KQL Query
 
 ```kusto
