@@ -1,0 +1,39 @@
+SecurityEvent
+| summarize LogCount = count() by ServerName = tostring(Computer)
+| order by LogCount desc
+--------------------------------------
+SecurityEvent
+| where TimeGenerated > ago(24h)
+| summarize TotalSizeBytes = sum(_BilledSize) by ServerName = tostring(Computer)
+| extend TotalSizeMB = round(TotalSizeBytes / 1024 / 1024, 2)
+| project ServerName, TotalSizeMB
+| order by TotalSizeMB desc
+--------------------------------------
+SecurityEvent
+| where TimeGenerated > ago(24h)
+| summarize TotalSizeBytes = sum(_BilledSize)
+| extend TotalSizeMB = round(TotalSizeBytes / 1024 / 1024, 2)
+| project TotalSizeMB
+--------------------------------------
+SecurityEvent
+| where TimeGenerated > ago(24h)
+| summarize TotalEvents = count(), TotalSizeBytes = sum(_BilledSize)
+| extend TotalSizeMB = round(TotalSizeBytes / 1024 / 1024, 2)
+| project TotalEvents, TotalSizeMB
+--------------------------------------
+SecurityEvent
+| where TimeGenerated > ago(24h)
+| where EventID == 4703
+| summarize TotalSizeBytes = sum(_BilledSize)
+| extend TotalSizeMB = round(TotalSizeBytes / 1024 / 1024, 2)
+| project TotalSizeMB
+--------------------------------------
+
+
+
+
+
+
+
+
+
