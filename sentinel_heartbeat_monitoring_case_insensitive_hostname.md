@@ -1,7 +1,5 @@
 # Sentinel Heartbeat Monitoring (Case-Insensitive & FQDN-Safe)
 
-## Description
-
 This Kusto Query Language (KQL) script queries the `Heartbeat` table in Microsoft Sentinel to identify whether a predefined list of expected servers has reported a heartbeat within the last 6 hours.
 It normalizes hostnames to handle differences in casing and fully qualified domain names (FQDNs), ensuring accurate matching even when computers report as `vm010`, `VM010`, or `vm010.domain.local`.
 
