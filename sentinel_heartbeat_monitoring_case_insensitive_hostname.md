@@ -1,6 +1,6 @@
 # Sentinel Heartbeat Monitoring (Case-Insensitive & FQDN-Safe)
 
-This Kusto Query Language (KQL) script queries the `Heartbeat` table in Microsoft Sentinel to identify whether a predefined list of expected servers has reported a heartbeat within the last 6 hours.
+This Kusto Query Language (KQL) script queries the `Heartbeat` table in Microsoft Sentinel to identify whether a predefined list of expected servers has reported a heartbeat within the last 1 hour.
 It normalizes hostnames to handle differences in casing and fully qualified domain names (FQDNs), ensuring accurate matching even when computers report as `vm010`, `VM010`, or `vm010.domain.local`.
 
 ## Purpose
@@ -28,7 +28,7 @@ let Expected = datatable(Computer:string)
 
 let HeartbeatsLastHours =
     Heartbeat
-    | where TimeGenerated >= ago(6h)        // Only recent heartbeats
+    | where TimeGenerated >= ago(1h)        // Only recent heartbeats
     | extend ComputerKey = tolower(
         extract(@"^([^.]+)", 1, tostring(Computer))
       )                                    // Normalize hostname (strip domain + lowercase)
