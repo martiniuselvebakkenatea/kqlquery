@@ -7,10 +7,12 @@ It normalizes hostnames to handle differences in casing and fully qualified doma
 
 ## Purpose
 
-* **Point 1:** Detect missing heartbeats for critical or expected servers
-* **Point 2:** Handle inconsistent hostname casing across data sources
-* **Point 3:** Support environments where agents report FQDNs instead of short hostnames
-* **Point 4:** Provide a simple operational health check for server monitoring in Sentinel
+This query helps validate agent connectivity and server availability by identifying systems that have stopped reporting heartbeats. It is useful for:
+
+* **Detecting servers with offline or unhealthy monitoring agents**
+* **Identifying gaps in log ingestion or agent deployment**
+* **Verifying monitoring coverage for critical or expected systems**
+* **Supporting operational monitoring and alerting in Microsoft Sentinel**
 
 ## Data Source
 
