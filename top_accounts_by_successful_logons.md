@@ -7,10 +7,10 @@ It filters for **successful logon events (Event ID 4624)** on computers whose na
 
 ## Purpose
 
-*   **Point 1:** Identify which accounts are logging on most frequently to a specific server.
-*   **Point 2:** Support investigation of authentication activity on critical or sensitive hosts.
-*   **Point 3:** Help detect unusual account usage patterns or potential misuse.
-*   **Point 4:** Provide visibility into account activity for operational or security reviews.
+*   Identify which accounts are logging on most frequently to a specific server.
+*   Support investigation of authentication activity on critical or sensitive hosts.
+*   Help detect unusual account usage patterns or potential misuse.
+*   Provide visibility into account activity for operational or security reviews.
 
 ## Data Source
 
