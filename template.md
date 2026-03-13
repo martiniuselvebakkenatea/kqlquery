@@ -7,10 +7,10 @@ It filters for `<key condition(s)>` and summarizes the results by `<grouping fie
 
 ## Purpose
 
-- **Point 1:** Write some text here
-- **Point 2:** Write some text here
-- **Point 3:** Write some text here
-- **Point 4:** Write some text here
+- **Purpose text here** Purpose details here
+- **Purpose text here** Purpose details here
+- **Purpose text here** Purpose details here
+- **Purpose text here** Purpose details here
 
 ## Data Source
 
